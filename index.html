@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan 2</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scripts.js"></script>
+</head>
+<body>
+    <h1>LAPORAN PRATIKUM</h1>
+    
+    <label class="toggle-switch">
+        <input type="checkbox"  id="modeToggle" onchange="toggleMode()">
+        <span class="slider"></span>
+    </label>
+
+    <h2>Nama : Muhammad Farhan Fahrezy <br>
+        NIM : 202431166
+    </h2>
+
+
+    <div class="content-wrapper">
+        <h3>
+            <ol>
+                <li>Mengapa menggunakan CSS dan JavaScript dalam pemrograman web modern?
+                </li>
+
+                <li>Jelaskan konsep dan tujuan utama dari Responsive Web Design (RWD)! 
+                </li>
+
+                <li>Bagaimana kombinasi CSS, JavaScript, dan prinsip RWD dapat menghasilkan tampilan web yang interaktif sekaligus adaptif? Jelaskan bagaimana ketiganya saling melengkapi!
+                </li>
+            </ol>
+        </h3>
+
+        <h3 id="jawaban" onclick="hide()"><u><b>JAWABAN</b></u></h3>
+        <div class="jawaban">
+            <ol style="display: block;">
+                <li><h3>Karena CSS pada pemrograman web modern merupakan bahasa stylesheet yang digunakan untuk mengontrol presentasi visual dan tata letak halaman web yang ditulis di dalam HTML, CSS juga membuat desain responsif, Konsistensi Visual, dan Kustomisasi tampilan HTML.
+
+                Sedangkan Javascript dalam pemrograman web digunakan karena JS merupakan bahasa pemrograman yang membuat halaman web menjadi lebih dinamis dan interaktif, JS fungsi utama adalah menambahkan interaktivitas, dan membuat konten dinamis.
+                </h3></li>
+
+                <li><h3>Responsive Web Design (RWD) adalah sebuah pendekatan web yang berutjuan agar tampilan sebuah situs web dapat beradaptasi secara otomatis dengan berbagai ukuran layar dan perangkat yang digunakan oleh user.
+
+                RWD intinya adalah membangun satu situs web yang fleksibel, bukan beberapa versi situs untuk perangkat yang berbeda.
+
+                Tujuan prima dari RWD ini adalah untuk memberikan pengalaman pengguna atau UX (User Experience) yang optimal dan konsisten di semua jenis macam perangkat.
+                </h3></li>
+
+                <li><h3>Kombinasi antara CSS, JS dan RWD merupakan fondasi utama dalam menciptakan halaman web modern yang tidak hanya interaktif juga adaptif di berbagai macam perangkat. Sederhananya saja HTML adalah kerangka tulang, CSS adalah Fisik luarnya seperti pakaian, Javascript adalah saraf, otak, dan juga ototnya. <br> <br>
+
+                Ketiganya saling melengkapi misalnya dalam contoh interface, contoh paling nyata adalah pada menu navigasi mobile (hamburger menu). Dalam kasus ini, RWD mendeteksi keterbatasan layar dan menginstruksikan untuk menyembunyikan menu navigasi panjang; CSS bertugas menyembunyikan elemen tersebut dan menyiapkan animasi sliding yang mulus; sementara JavaScript bertindak sebagai pemicu "saklar" yang mendeteksi sentuhan jari pengguna untuk membuka atau menutup menu tersebut. Tanpa JavaScript, interaksi tidak akan terjadi tanpa CSS, transisi akan terlihat kaku; dan tanpa RWD, tata letak akan berantakan. Kolaborasi inilah yang menghasilkan web yang tidak hanya adaptif terhadap ukuran layar, tetapi juga responsif terhadap perilaku manusia.
+                </h3></li>
+
+            </ol>
+        </div>
+    </div>
+    
+</body>
+</html>

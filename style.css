@@ -1,0 +1,165 @@
+* {
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: wheat;
+}
+
+h2 {
+    background-color: peachpuff;
+}
+
+/* TOGGLE SWITCH */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+}
+
+.toggle-switch input {
+    opacity: 0;       
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: burlywood;
+    transition: 0.4s;
+    border-radius: 40px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 32px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: brown;
+}
+
+input:checked + .slider:before {
+    transform: translateX(40px);
+}
+
+
+
+
+body.messy {
+    background: #ffff00;
+}
+
+body.messy h1 {
+    color: #ff0000;
+    font-size: 3em;
+    text-align: left;
+}
+
+body.messy h2 {
+    color: #0000ff;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+body.messy h3 {
+    color: #00ffff;
+    font-size: 1.3em;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+body.messy #jawaban {
+    background: #ff0000;
+    color: #ffff00;
+}
+
+body.messy .jawaban {
+    background: #00ff00;
+}
+
+
+
+/*  DESKTOP: ≥1024px  */
+@media screen and (min-width: 1024px) {
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    h3, p, li {
+        font-size: 1.1em;
+    }
+}
+
+/*  TABLET: 600–1023px */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+
+    .content-wrapper {
+        display: block; /* satu kolom */
+    }
+
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.3em; }
+    h3, li {
+        font-size: 1em; /* ukuran teks menengah */
+    }
+
+    .toggle-switch {
+        width: 90px;
+        height: 45px;
+    }
+}
+
+/* SMARTPHONE: ≤599px */
+@media screen and (max-width: 599px) {
+
+    .content-wrapper {
+        display: block; /* tetap satu kolom */
+    }
+
+    h1 {
+        font-size: 1.6em;
+        padding: 15px;
+    }
+
+    h2 { font-size: 1.2em; }
+
+    h3, li {
+        font-size: 1.1em;  /* teks diperbesar */
+        line-height: 1.5;
+    }
+
+    #jawaban {
+        font-size: 1.3em;
+        padding: 20px; /* lebih nyaman untuk disentuh */
+    }
+
+    .toggle-switch {
+        width: 110px;
+        height: 55px; /* switch lebih besar */
+    }
+}
